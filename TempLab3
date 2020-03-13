@@ -1,0 +1,14 @@
+import java.util.*;
+
+public class TempLab3{
+
+	 public static void main(String[] args) {
+
+	 	System.out.println("What is the current tempereature in Celcius? ");
+	 	Scanner sc = new Scanner(System.in);
+
+	 	double celcius = sc.nextDouble();
+	 	
+	 	System.out.println ((celcius > 0) ? "\nIt looks like warm out there. I wish I was there right now " : "Oh man I'm sorry, it's cold. I hope you are wearing something warm");
+	}
+}
