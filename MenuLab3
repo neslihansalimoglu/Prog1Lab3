@@ -1,0 +1,52 @@
+import java.util.*;
+
+public class MenuLab3 {
+    public static void main(String[] args){
+        
+        Scanner sc = new Scanner(System.in);
+	
+        System.out.println("What would you like to convert? Enter the number of your choice");
+        System.out.println("...............................................................");
+        System.out.println(". 1. Meters to Feet                                           .");
+        System.out.println(". 2. CAD to USD                                               .");
+        System.out.println(". 3. Celsius to Fahrenheit                                    .");
+        System.out.println("...............................................................");
+
+        	int number = sc.nextInt();
+
+        	//Convertions (number 3 is in the case 3 becasue it didnt work when I type it in this section)
+        	double number1 = 0.305;
+        	double number2 = 0.305;
+        	
+
+        	switch (number){
+            case 1:
+                System.out.println("\nGreat, please enter a value: ");
+
+                double meters = sc.nextDouble();
+                
+                System.out.println("\n"meters + " meters is " + (meters * number1) + " feet");
+                break;
+
+            case 2:
+                System.out.println("\nGreat, please enter a value:");
+
+                double cad = sc.nextDouble();
+                
+                System.out.println("\n"cad + " CAD is " + (cad * number2 + " USD"));
+                break;
+
+            case 3:
+                System.out.println("\nGreat, please enter a value:");
+
+                double celcius = sc.nextDouble();
+                double number3 = (celcius * (9/5)) + 32;
+
+                System.out.println("\n"celcius + " Celcius is " + number3 + " Fahrenheit");
+                break;
+
+            }
+    }
+
+}
+
